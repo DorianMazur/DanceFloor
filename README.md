@@ -1,7 +1,7 @@
 # DanceFloor
 
-| Generating        | Hovering           | Clicking  |
-| ------------- |:-------------:| -----:|
+|Generating|Hovering|Clicking|
+| :-------------: |:-------------:| :-----:|
 |![alt text](preview1.gif "Preview 1") | ![alt text](preview2.gif "Preview 1") | ![alt text](preview3.gif "Preview 1")
 
 ## Available Scripts
