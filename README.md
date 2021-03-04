@@ -1,6 +1,8 @@
 # DanceFloor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+| Generating        | Hovering           | Clicking  |
+| ------------- |:-------------:| -----:|
+|![alt text](preview1.gif "Preview 1") | ![alt text](preview2.gif "Preview 1") | ![alt text](preview3.gif "Preview 1")
 
 ## Available Scripts
 
