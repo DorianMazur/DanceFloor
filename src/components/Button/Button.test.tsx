@@ -2,7 +2,7 @@ import { render, fireEvent, screen } from "@testing-library/react";
 import Button from "./Button";
 
 describe("Button", () => {
-  test("onPress works correctly and label is present", async () => {
+  test("should work correctly", async () => {
     const onPress = jest.fn();
     render(<Button onPress={onPress} text="test" />);
 

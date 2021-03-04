@@ -3,7 +3,7 @@ import DanceFloor from "./DanceFloor";
 import 'jest-canvas-mock';
 
 describe("DanceFloor", () => {
-  test("renders without crash", async () => {
+  test("should renders without crash", async () => {
     const utils = render(<DanceFloor dimensions={{rows: 3, columns:2}} />);
 
     expect(utils).toMatchSnapshot()
