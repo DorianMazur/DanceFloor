@@ -39,32 +39,38 @@ const DanceFloor: React.FC<IDanceFloor> = ({ dimensions }) => {
   return (
     <>
       <div className="form-container">
-        <Input
-          label="Set column quantity"
-          value={columns}
-          onChange={(v) => setColumns(v)}
-          name="columns"
-        />
-        <Input
-          label="Set row quantity"
-          value={rows}
-          onChange={(v) => setRows(v)}
-          name="rows"
-        />
-        <Button
-          text="Generate"
-          onSubmit={() =>
-            generateNewTiles(
-              rows || dimensions.rows,
-              columns || dimensions.columns
-            )
-          }
-        />
+        <h4>
+          If you do not specify the configuration, the default values ​​taken
+          from the API will be used
+        </h4>
+        <div>
+          <Input
+            label="Set column quantity"
+            value={columns}
+            onChange={(v) => setColumns(v)}
+            name="columns"
+          />
+          <Input
+            label="Set row quantity"
+            value={rows}
+            onChange={(v) => setRows(v)}
+            name="rows"
+          />
+          <Button
+            text="Generate"
+            onPress={() =>
+              generateNewTiles(
+                rows || dimensions.rows,
+                columns || dimensions.columns
+              )
+            }
+          />
+        </div>
       </div>
       <canvas
         className="canvas"
         ref={canvasRef}
-        width="600"
+        width="500"
         onMouseMove={(e) => changeColorTile(e, "rgb(0,0,0)")}
         onClick={(e) => changeColorTile(e, "rgb(255,255,255)")}
       />

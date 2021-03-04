@@ -2,13 +2,13 @@ import React from "react";
 import './Button.css'
 
 export interface IButtonProps {
-  onSubmit: Function;
+  onPress: Function;
   text: string;
 }
 
-const Button: React.FC<IButtonProps> = ({ onSubmit, text }) => {
+const Button: React.FC<IButtonProps> = ({ onPress, text }) => {
   return (
-    <button className="button" onClick={() => onSubmit()}>
+    <button className="button" onClick={() => onPress()}>
       {text}
     </button>
   );
